@@ -40,7 +40,7 @@ const LandingPage = () => {
       <section className="w-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20 md:py-32 gap-8 sm:gap-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
         <div className="w-full">
           <img
-            src="src/image/car2.png"
+            src="../src/image/car2.png"
             alt="Premium luxury car showcase"
             className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
             loading="lazy"
@@ -77,7 +77,7 @@ const LandingPage = () => {
         {/* First image */}
         <div className="w-full">
           <img
-            src="src/image/car4.jpg"
+            src="../src/image/car4.jpg"
             alt="Premium luxury car showcase"
             className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
             loading="lazy"
