@@ -7,4 +7,5 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js',
   },
+  base: './', // 👈 This is the fix for Vercel build path
 })
