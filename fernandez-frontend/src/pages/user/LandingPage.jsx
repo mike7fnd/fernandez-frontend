@@ -62,7 +62,7 @@ const LandingPage = () => {
       <section className="w-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20 md:py-32 gap-8 sm:gap-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
         <div className="w-full">
           <img
-            src="https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/566210566_122209632086358347_3893121427333073813_n.jpg?stp=dst-jpg_p843x403_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGBHmEsZgc7i7rqCuKDuPszslrq3kMKvuKyWureQwq-4jq6KwH5T4kmkwy2pDsECHdhx4dVb4VpT3bYV7HcZXRe&_nc_ohc=yfLaE92DDR8Q7kNvwFlJ24B&_nc_oc=AdlJbhGYTYwAnJKy-VPCnTMZTQctViadv1qngRNYQ_wctMa_MpoJxIZbgfN8iWoOFPAwmWkMRKFbRWtZan7_JvVi&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=U_BAnYfSdmwNpMH-EJ1Nvg&oh=00_AfeExNFZOib5Fu8beC-4xqwN6Ug0fsLRdpVrEcz3sRGD0g&oe=68F94EF3"
+            src="./car2.png"
             alt="Premium luxury car showcase"
             className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
             loading="lazy"
