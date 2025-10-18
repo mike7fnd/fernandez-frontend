@@ -40,7 +40,7 @@ const LandingPage = () => {
       <section className="w-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20 md:py-32 gap-8 sm:gap-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
         <div className="w-full">
           <img
-            src="../src/image/car2.png"
+            src=".https://th.bing.com/th/id/R.ea67d54b0bc6d7422c9db0a6e25b3587?rik=vXW3dWHsiSZTHw&riu=http%3a%2f%2feskipaper.com%2fimages%2fwhite-car-wallpaper-2.jpg&ehk=N52urkQWjchjULdWnGAWzKVTREvBNDaqEEZ654QmlZU%3d&risl=&pid=ImgRaw&r=0"
             alt="Premium luxury car showcase"
             className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
             loading="lazy"
@@ -54,7 +54,7 @@ const LandingPage = () => {
             </span>
           </h1>
           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
-            Choose from our premium selection of luxury cars, SUVs, and sports models. Order now in minutes and drive your dream car tomorrow.
+            Choose from our premium selection of luxury cars, SUVs, and sports models. Order online in minutes and drive your dream car tomorrow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -77,7 +77,7 @@ const LandingPage = () => {
         {/* First image */}
         <div className="w-full">
           <img
-            src="src/image/car4.jpg"
+            src="https://wallpapercave.com/wp/wc1764107.jpg"
             alt="Premium luxury car showcase"
             className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
             loading="lazy"
