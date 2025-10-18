@@ -1,9 +1,31 @@
-﻿import React, { useEffect } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/ui/navbar";
 
 const LandingPage = () => {
   const navigate = useNavigate();
+
+  const images = [
+    './src/image/1.jpg',
+    './src/image/2.jpg',
+    './src/image/3.jpg',
+    './src/image/4.png',
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 2) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 2 + images.length) % images.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const observerOptions = {
@@ -56,22 +78,22 @@ const LandingPage = () => {
           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
             Choose from our premium selection of luxury cars, SUVs, and sports models. Order online in minutes and drive your dream car tomorrow.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => navigate('/cars')}
-              className="bg-[#1A2E44] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-sm sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
-            >
-              Start Your Order →
-            </button>
-            <button
-              onClick={() => navigate('/cars')}
-              className="bg-[#1A2E44] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-sm sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
-            >
-              Browse Cars
-            </button>
-          </div>
+ <div className="flex flex-row gap-2 sm:gap-6 justify-center">
+  <button
+    onClick={() => navigate('/cars')}
+    className="bg-[#1A2E44] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
+  >
+    Start Your Order →
+  </button>
+  <button
+    onClick={() => navigate('/cars')}
+    className="bg-[#4B5563] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#4B5563] active:scale-95"
+  >
+    Browse Cars
+  </button>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="w-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20 md:py-32 gap-8 sm:gap-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
         {/* First image */}
@@ -84,6 +106,7 @@ const LandingPage = () => {
           />
         </div>
       </section>
+
 
       {/* Features Section */}
       <section id="features" className="w-full py-16 sm:py-20 md:py-24 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-200">
@@ -103,10 +126,10 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
                   Easy Online Ordering
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
                   Configure and order your car in just a few clicks, from anywhere.
                 </p>
               </div>
@@ -119,10 +142,10 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
                   Fast Shipment
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
                   Get your car delivered to your door in as little as 48 hours.
                 </p>
               </div>
@@ -135,13 +158,38 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
                   Trusted Quality
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
                   Every car is certified and backed by our satisfaction guarantee.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+            {/* Featured Cars Section */}
+      <section className="w-full py-12 sm:py-16 lg:py-20 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-100">
+        <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
+          <h2 className="text-3xl sm:text-4xl font-sf-pro font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent animate-fade-in">
+          </h2>
+          <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple p-6 sm:p-8 overflow-hidden relative">
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src={images[currentIndex]}
+                alt={`Featured car ${currentIndex + 1}`}
+                className="w-full h-auto object-cover rounded-lg"
+                style={{ aspectRatio: '3/4' }}
+              />
+              <img
+                src={images[(currentIndex + 1) % images.length]}
+                alt={`Featured car ${(currentIndex + 1) % images.length + 1}`}
+                className="w-full h-auto object-cover rounded-lg"
+                style={{ aspectRatio: '3/4' }}
+              />
             </div>
           </div>
         </div>
