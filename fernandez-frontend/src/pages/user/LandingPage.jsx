@@ -6,10 +6,10 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const images = [
-    './src/image/1.jpg',
-    './src/image/2.jpg',
-    './src/image/3.jpg',
-    './src/image/4.png',
+    './1.jpg',
+    './2.jpg',
+    './3.jpg',
+    './4.png',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
