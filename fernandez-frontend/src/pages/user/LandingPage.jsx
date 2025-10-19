@@ -76,7 +76,7 @@ const LandingPage = () => {
             </span>
           </h1>
           <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
-            Choose from our premium selection of luxury cars, SUVs, and sports models. Order online in minutes and drive your dream car tomorrow.
+            Choose from our premium selection of luxury cars, SUVs, and sports models. Order now and drive your dream car tomorrow.
           </p>
  <div className="flex flex-row gap-2 sm:gap-6 justify-center">
   <button
