@@ -1,8 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Card({ car, onAddToCart }) {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate('/car-details', { state: { car } });
+  };
+
   return (
-    <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group overflow-hidden">
+    <div
+      onClick={handleCardClick}
+      className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group overflow-hidden"
+    >
       <img
         src={car.image || "https://images.unsplash.com/photo-1608889172483-70731f5f7e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80"}
         alt={car.title}
@@ -14,14 +24,23 @@ export default function Card({ car, onAddToCart }) {
         <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">{car.info}</p>
         <div className="flex flex-col gap-3 sm:gap-4">
           <span className="text-xl sm:text-2xl font-sf-pro font-bold text-blue-500 dark:text-blue-400">${car.price.toLocaleString()}</span>
-          <div className="flex gap-2 justify-center">
+          <div className="flex flex-col sm:flex-row gap-2 justify-center">
             <button
-              onClick={() => onAddToCart(car)}
-              className="bg-gray-500 text-white px-3 sm:px-4 py-2 rounded-full shadow-lg hover:ring-2 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-medium text-xs sm:text-sm active:bg-white active:text-gray-500 active:scale-95"
+              onClick={(e) => {
+                e.stopPropagation();
+                onAddToCart(car);
+              }}
+              className="bg-gray-500 text-white px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-full shadow-lg hover:ring-2 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-medium text-xs sm:text-sm active:bg-white active:text-gray-500 active:scale-95"
             >
               Add to Cart
             </button>
-            <button className="bg-[#1A2E44] text-white px-3 sm:px-4 py-2 rounded-full shadow-lg hover:ring-2 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-medium text-xs sm:text-sm active:bg-white active:text-[#1A2E44] active:scale-95">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate('/order', { state: { cart: [{ ...car, quantity: 1 }] } });
+              }}
+              className="bg-[#1A2E44] text-white px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-full shadow-lg hover:ring-2 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-medium text-xs sm:text-sm active:bg-white active:text-[#1A2E44] active:scale-95"
+            >
               Buy Now
             </button>
           </div>

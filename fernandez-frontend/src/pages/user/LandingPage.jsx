@@ -69,13 +69,13 @@ const LandingPage = () => {
           />
         </div>
         <div className="w-full text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
             Wanna Ride?{" "}
             <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
               I Have a Classy Car for you
             </span>
           </h1>
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
             Choose from our premium selection of luxury cars, SUVs, and sports models. Order online in minutes and drive your dream car tomorrow.
           </p>
  <div className="flex flex-row gap-2 sm:gap-6 justify-center">
@@ -112,13 +112,13 @@ const LandingPage = () => {
       <section id="features" className="w-full py-16 sm:py-20 md:py-24 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-200">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">Why Order with Us</h2>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 mb-2 sm:mb-4">Why Order with Us</h2>
+            <p className="text-sm sm:text-base text-gray-600">
               Seamless car ordering, tailored to you
             </p>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
+          <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
               <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
                 <img
                   src="https://images.icon-icons.com/37/PNG/512/purchaseorderapplication_compra_orde_4474.png"
@@ -126,15 +126,15 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Easy Online Ordering
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
                   Configure and order your car in just a few clicks, from anywhere.
                 </p>
               </div>
             </div>
-            <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
+            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
               <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
                 <img
                   src="https://images.icon-icons.com/3553/PNG/512/shipment_shipments_package_delivery_box_ecommerce_icon_224941.png"
@@ -142,15 +142,15 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Fast Shipment
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
                   Get your car delivered to your door in as little as 48 hours.
                 </p>
               </div>
             </div>
-            <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
+            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
               <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
                 <img
                   src="https://images.icon-icons.com/3583/PNG/512/good_quality_winner_achievement_favorite_award_tick_check_mark_rating_star_icon_225923.png"
@@ -158,10 +158,10 @@ const LandingPage = () => {
                   className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors text-center">
+                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Trusted Quality
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
                   Every car is certified and backed by our satisfaction guarantee.
                 </p>
               </div>
@@ -171,12 +171,12 @@ const LandingPage = () => {
       </section>
 
 
-            {/* Featured Cars Section */}
-      <section className="w-full py-12 sm:py-16 lg:py-20 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-100">
+      {/* Featured Cars Section */}
+      <section className="w-full py-6 sm:py-8 lg:py-10 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-100">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <h2 className="text-3xl sm:text-4xl font-sf-pro font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent animate-fade-in">
           </h2>
-          <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple p-6 sm:p-8 overflow-hidden relative">
+          <div className="overflow-hidden relative">
             <div className="grid grid-cols-2 gap-4">
               <img
                 src={images[currentIndex]}
@@ -199,12 +199,12 @@ const LandingPage = () => {
       <section id="brands" className="w-full py-12 sm:py-16 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-400">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">Trusted Brands</h2>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 mb-2 sm:mb-4">Trusted Brands</h2>
+            <p className="text-sm sm:text-base text-gray-600">
               Order from the world's leading car manufacturers
             </p>
           </div>
-          <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple overflow-hidden">
+          <div className="overflow-hidden">
             <div className="flex animate-scroll hover:pause-scroll">
               {[
                 { src: "https://tse3.mm.bing.net/th/id/OIP.m1ar389tpEOAFN1NTurqvwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Tesla logo" },
@@ -234,14 +234,14 @@ const LandingPage = () => {
       <section id="contact" className="w-full py-16 sm:py-20 md:py-24 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-800">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">Need Help Ordering?</h2>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 mb-2 sm:mb-4">Need Help Ordering?</h2>
+            <p className="text-sm sm:text-base text-gray-600">
               Our team is here to assist with your car order
             </p>
           </div>
           <div className="w-full max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
-            <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl p-6 sm:p-8 rounded-2xl shadow-apple">
-              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">Contact Us</h3>
+            <div className="bg-white border border-gray-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 mb-4 sm:mb-6">Contact Us</h3>
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center">
                   <img
@@ -251,8 +251,8 @@ const LandingPage = () => {
                     loading="lazy"
                   />
                   <div>
-                    <p className="font-sf-pro font-semibold text-gray-900 dark:text-white text-sm sm:text-base">Showroom</p>
-                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">123 Car Street, Auto City, AC 12345</p>
+                    <p className="font-sf-pro font-semibold text-gray-900 text-sm sm:text-base">Showroom</p>
+                    <p className="text-sm sm:text-base text-gray-600">123 Car Street, Auto City, AC 12345</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -263,8 +263,8 @@ const LandingPage = () => {
                     loading="lazy"
                   />
                   <div>
-                    <p className="font-sf-pro font-semibold text-gray-900 dark:text-white text-sm sm:text-base">Support Line</p>
-                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">1-800-CAR-ORDER</p>
+                    <p className="font-sf-pro font-semibold text-gray-900 text-sm sm:text-base">Support Line</p>
+                    <p className="text-sm sm:text-base text-gray-600">1-800-CAR-ORDER</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -275,20 +275,20 @@ const LandingPage = () => {
                     loading="lazy"
                   />
                   <div>
-                    <p className="font-sf-pro font-semibold text-gray-900 dark:text-white text-sm sm:text-base">Email</p>
-                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">orders@fernandezcars.com</p>
+                    <p className="font-sf-pro font-semibold text-gray-900 text-sm sm:text-base">Email</p>
+                    <p className="text-sm sm:text-base text-gray-600">orders@fernandezcars.com</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl p-6 sm:p-8 rounded-2xl shadow-apple">
-              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">Ask About Your Order</h3>
+            <div className="bg-white border border-gray-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 mb-4 sm:mb-6">Ask About Your Order</h3>
               <div className="space-y-3 sm:space-y-4">
                 <div>
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/50 dark:bg-gray-800/50 rounded-apple focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm sm:text-base"
                     aria-describedby="name-label"
                   />
                   <span id="name-label" className="sr-only">Your Name</span>
@@ -297,7 +297,7 @@ const LandingPage = () => {
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/50 dark:bg-gray-800/50 rounded-apple focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm sm:text-base"
                     aria-describedby="email-label"
                   />
                   <span id="email-label" className="sr-only">Your Email</span>
@@ -306,7 +306,7 @@ const LandingPage = () => {
                   <textarea
                     rows="4"
                     placeholder="Your Order Inquiry"
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/50 dark:bg-gray-800/50 rounded-apple focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 resize-none transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 resize-none transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm sm:text-base"
                     aria-describedby="message-label"
                   ></textarea>
                   <span id="message-label" className="sr-only">Your Order Inquiry</span>
@@ -324,7 +324,7 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-system-secondary text-gray-400 dark:text-gray-300 text-center py-6 sm:py-8 animate-on-scroll opacity-0 transition-all duration-1000 delay-1000">
+      <footer className="w-full bg-gray-100 text-gray-600 text-center py-6 sm:py-8 animate-on-scroll opacity-0 transition-all duration-1000 delay-1000">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-3 sm:mb-4">
             <a href="https://twitter.com/fernandezcars" className="hover:text-blue-500 transition-colors duration-200 text-sm sm:text-base">Twitter</a>

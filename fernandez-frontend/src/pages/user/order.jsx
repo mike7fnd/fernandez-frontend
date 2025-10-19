@@ -285,7 +285,7 @@ export default function Order() {
 
                   <div>
                     <label className="block text-base sm:text-lg font-sf-pro font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">Add-Ons</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
                       <label className="flex items-center">
                         <input
                           type="checkbox"
