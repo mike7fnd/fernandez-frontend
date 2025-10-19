@@ -379,7 +379,7 @@ export default function Listing() {
       )}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8">
 
-        <section className="bg-white dark:bg-gray-800 rounded-2xl shadow-apple p-4 sm:p-6 mb-6 sm:mb-8">
+        <section className="bg-white rounded-2xl shadow-apple p-4 sm:p-6 mb-6 sm:mb-8">
           <div className="flex justify-between items-center mb-4">
             <div className="relative">
               <input
@@ -387,27 +387,27 @@ export default function Listing() {
                 placeholder="Search cars..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-48 sm:w-64 md:w-80 px-4 py-2 border border-gray-400 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm sm:text-base"
+                className="w-48 sm:w-64 md:w-80 px-4 py-2 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm sm:text-base"
               />
             </div>
             <div className="relative">
               <button
                 onClick={() => setIsFilterExpanded(!isFilterExpanded)}
-                className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-400 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 flex items-center justify-center"
+                className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 flex items-center justify-center"
               >
                 <svg className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform ${isFilterExpanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               {isFilterExpanded && (
-                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-xl shadow-lg z-50 min-w-[300px] p-4">
+                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-xl shadow-lg z-50 min-w-[300px] p-4">
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 dark:text-gray-300 mb-1">Car Type</label>
+                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 mb-1">Car Type</label>
                       <select
                         value={filters.type}
                         onChange={(e) => setFilters({ ...filters, type: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-400 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 dark:text-white text-sm"
+                        className="w-full px-3 py-2 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 text-sm"
                       >
                         <option value="">All Types</option>
                         <option value="Sedan">Sedan</option>
@@ -419,11 +419,11 @@ export default function Listing() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 dark:text-gray-300 mb-1">Fuel Type</label>
+                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 mb-1">Fuel Type</label>
                       <select
                         value={filters.fuel}
                         onChange={(e) => setFilters({ ...filters, fuel: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-400 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 dark:text-white text-sm"
+                        className="w-full px-3 py-2 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 text-sm"
                       >
                         <option value="">All Fuels</option>
                         <option value="Electric">Electric</option>
@@ -432,21 +432,21 @@ export default function Listing() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 dark:text-gray-300 mb-1">Price Range</label>
+                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 mb-1">Price Range</label>
                       <div className="flex gap-2">
                         <input
                           type="number"
                           placeholder="Min"
                           value={filters.minPrice}
                           onChange={(e) => setFilters({ ...filters, minPrice: e.target.value })}
-                          className="w-full px-2 py-2 border border-gray-400 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm"
+                          className="w-full px-2 py-2 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm"
                         />
                         <input
                           type="number"
                           placeholder="Max"
                           value={filters.maxPrice}
                           onChange={(e) => setFilters({ ...filters, maxPrice: e.target.value })}
-                          className="w-full px-2 py-2 border border-gray-400 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 text-sm"
+                          className="w-full px-2 py-2 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 font-sf-pro text-gray-900 placeholder-gray-500 text-sm"
                         />
                       </div>
                     </div>
@@ -461,35 +461,35 @@ export default function Listing() {
                       </PrimaryButton>
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 dark:text-gray-300 mb-2">Sort by</label>
+                      <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 mb-2">Sort by</label>
                       <div className="space-y-1">
                         <button
                           onClick={() => { setSortBy('featured'); setIsFilterExpanded(false); }}
-                          className="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl font-sf-pro text-sm"
+                          className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-xl font-sf-pro text-sm"
                         >
                           Featured
                         </button>
                         <button
                           onClick={() => { setSortBy('price-low'); setIsFilterExpanded(false); }}
-                          className="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl font-sf-pro text-sm"
+                          className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-xl font-sf-pro text-sm"
                         >
                           Price: Low to High
                         </button>
                         <button
                           onClick={() => { setSortBy('price-high'); setIsFilterExpanded(false); }}
-                          className="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl font-sf-pro text-sm"
+                          className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-xl font-sf-pro text-sm"
                         >
                           Price: High to Low
                         </button>
                         <button
                           onClick={() => { setSortBy('mpg'); setIsFilterExpanded(false); }}
-                          className="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl font-sf-pro text-sm"
+                          className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-xl font-sf-pro text-sm"
                         >
                           Best MPG
                         </button>
                         <button
                           onClick={() => { setSortBy('newest'); setIsFilterExpanded(false); }}
-                          className="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl font-sf-pro text-sm"
+                          className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-xl font-sf-pro text-sm"
                         >
                           Newest
                         </button>
@@ -505,19 +505,19 @@ export default function Listing() {
         {/* Popular Picks Sidebar */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8">
           <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-apple p-4 sm:p-6 sticky top-4">
-              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">Popular Picks</h3>
+            <div className="bg-white rounded-2xl shadow-apple p-4 sm:p-6 sticky top-4">
+              <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 mb-3 sm:mb-4">Popular Picks</h3>
               <div className="space-y-3 sm:space-y-4">
                 {initialCars.filter(car => car.featured).slice(0, 3).map((car) => (
-                  <div key={car.id} className="flex items-center space-x-3 p-2 sm:p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
+                  <div key={car.id} className="flex items-center space-x-3 p-2 sm:p-3 bg-gray-50 rounded-xl">
                     <img
                       src={car.image}
                       alt={car.title}
                       className="w-10 sm:w-12 h-10 sm:h-12 object-cover rounded-lg"
                     />
                     <div>
-                      <h4 className="text-xs sm:text-sm font-sf-pro font-medium text-gray-900 dark:text-white">{car.title}</h4>
-                      <p className="text-xs text-gray-600 dark:text-gray-400">${car.price.toLocaleString()}</p>
+                      <h4 className="text-xs sm:text-sm font-sf-pro font-medium text-gray-900">{car.title}</h4>
+                      <p className="text-xs text-gray-600">${car.price.toLocaleString()}</p>
                     </div>
                   </div>
                 ))}
@@ -528,7 +528,7 @@ export default function Listing() {
           <div className="lg:col-span-3">
             <section id="listing" className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {paginatedCars.length === 0 ? (
-                <p className="col-span-full text-center text-gray-500 dark:text-gray-400 py-6 sm:py-8 font-sf-pro text-sm sm:text-base">No cars match your search.</p>
+                <p className="col-span-full text-center text-gray-500 py-6 sm:py-8 font-sf-pro text-sm sm:text-base">No cars match your search.</p>
               ) : (
                 paginatedCars.map((car) => (
                   <Card key={car.id} car={car} onAddToCart={addToCart} />
@@ -552,7 +552,7 @@ export default function Listing() {
                     onClick={() => goToPage(index + 1)}
                     className={`px-3 sm:px-4 py-2 rounded-full font-sf-pro font-medium transition-all duration-200 text-sm sm:text-base ${currentPage === index + 1
                       ? 'bg-[#1A2E44] text-white shadow-lg hover:ring-4 ring-white hover:scale-105'
-                      : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-[#1A2E44]/10 hover:scale-102'
+                      : 'bg-white text-gray-900 border border-gray-300 hover:bg-[#1A2E44]/10 hover:scale-102'
                       } focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 active:scale-96`}
                   >
                     {index + 1}

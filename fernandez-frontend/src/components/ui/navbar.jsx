@@ -10,7 +10,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="glass bg-white/10 dark:bg-gray-900/75 bg-glass-gradient border-b border-white/20 sticky top-0 z-50">
+    <nav className="glass bg-white/10 bg-glass-gradient border-b border-white/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12 sm:h-16">
           <Link to="/" className="flex items-center p-1">

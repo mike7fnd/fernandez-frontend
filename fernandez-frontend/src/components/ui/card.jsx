@@ -11,7 +11,7 @@ export default function Card({ car, onAddToCart }) {
   return (
     <div
       onClick={handleCardClick}
-      className="glass bg-white/90 dark:bg-gray-900/75 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group overflow-hidden"
+      className="glass bg-white/90 backdrop-blur-xl rounded-2xl shadow-apple hover:shadow-apple-hover hover:scale-105 transition-all duration-200 ease-out cursor-pointer group overflow-hidden"
     >
       <img
         src={car.image || "https://images.unsplash.com/photo-1608889172483-70731f5f7e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80"}
@@ -20,10 +20,10 @@ export default function Card({ car, onAddToCart }) {
         loading="lazy"
       />
       <div className="p-3 sm:p-5 space-y-3 sm:space-y-4">
-        <h3 className="text-base sm:text-lg font-sf-pro font-semibold text-gray-900 dark:text-white">{car.title}</h3>
-        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">{car.info}</p>
+        <h3 className="text-base sm:text-lg font-sf-pro font-semibold text-gray-900">{car.title}</h3>
+        <p className="text-xs sm:text-sm text-gray-600">{car.info}</p>
         <div className="flex flex-col gap-3 sm:gap-4">
-          <span className="text-xl sm:text-2xl font-sf-pro font-bold text-blue-500 dark:text-blue-400">${car.price.toLocaleString()}</span>
+          <span className="text-xl sm:text-2xl font-sf-pro font-bold text-blue-500">${car.price.toLocaleString()}</span>
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
             <button
               onClick={(e) => {

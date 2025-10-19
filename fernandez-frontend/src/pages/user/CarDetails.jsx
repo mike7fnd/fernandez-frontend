@@ -52,12 +52,12 @@ export default function CarDetails() {
           {/* Back Button */}
           <button
             onClick={() => navigate('/cars')}
-            className="mb-6 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors font-sf-pro font-medium"
+            className="mb-6 bg-gray-200 text-gray-800 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors font-sf-pro font-medium"
           >
             ← Back to Cars
           </button>
 
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-apple p-6 sm:p-8">
+          <div className="bg-white rounded-2xl shadow-apple p-6 sm:p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               {/* Car Image */}
               <div className="space-y-4">
@@ -72,29 +72,29 @@ export default function CarDetails() {
               {/* Car Details */}
               <div className="space-y-4 sm:space-y-6">
                 <div>
-                  <h1 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 dark:text-white mb-2">{car.title}</h1>
-                  <p className="text-lg sm:text-xl font-sf-pro font-semibold text-blue-500 dark:text-blue-400">${car.price.toLocaleString()}</p>
+                  <h1 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 mb-2">{car.title}</h1>
+                  <p className="text-lg sm:text-xl font-sf-pro font-semibold text-blue-500">${car.price.toLocaleString()}</p>
                 </div>
 
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
-                    <span className="font-sf-pro font-medium text-gray-700 dark:text-gray-300">Type:</span>
-                    <span className="text-gray-900 dark:text-white">{car.type}</span>
+                    <span className="font-sf-pro font-medium text-gray-700">Type:</span>
+                    <span className="text-gray-900">{car.type}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span className="font-sf-pro font-medium text-gray-700 dark:text-gray-300">Fuel:</span>
-                    <span className="text-gray-900 dark:text-white">{car.fuel}</span>
+                    <span className="font-sf-pro font-medium text-gray-700">Fuel:</span>
+                    <span className="text-gray-900">{car.fuel}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span className="font-sf-pro font-medium text-gray-700 dark:text-gray-300">MPG:</span>
-                    <span className="text-gray-900 dark:text-white">{car.mpg}</span>
+                    <span className="font-sf-pro font-medium text-gray-700">MPG:</span>
+                    <span className="text-gray-900">{car.mpg}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span className="font-sf-pro font-medium text-gray-700 dark:text-gray-300">Seats:</span>
-                    <span className="text-gray-900 dark:text-white">{car.seats}</span>
+                    <span className="font-sf-pro font-medium text-gray-700">Seats:</span>
+                    <span className="text-gray-900">{car.seats}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span className="font-sf-pro font-medium text-gray-700 dark:text-gray-300">Availability:</span>
+                    <span className="font-sf-pro font-medium text-gray-700">Availability:</span>
                     <span className={`font-medium ${car.available ? 'text-green-600' : 'text-red-600'}`}>
                       {car.available ? 'Available' : 'Out of Stock'}
                     </span>
@@ -102,16 +102,16 @@ export default function CarDetails() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-sf-pro font-semibold text-gray-900 dark:text-white mb-2">Description</h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <h3 className="text-lg font-sf-pro font-semibold text-gray-900 mb-2">Description</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     {car.description || "Experience the perfect blend of performance and luxury with this exceptional vehicle. Featuring cutting-edge technology, superior comfort, and unmatched reliability, this car is designed to exceed your expectations on every drive."}
                   </p>
                 </div>
 
                 {car.features && car.features.length > 0 && (
                   <div>
-                    <h3 className="text-lg font-sf-pro font-semibold text-gray-900 dark:text-white mb-2">Key Features</h3>
-                    <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+                    <h3 className="text-lg font-sf-pro font-semibold text-gray-900 mb-2">Key Features</h3>
+                    <ul className="list-disc list-inside space-y-1 text-gray-600">
                       {car.features.map((feature, index) => (
                         <li key={index}>{feature}</li>
                       ))}

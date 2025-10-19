@@ -6,10 +6,10 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const images = [
-    './1.jpg',
-    './2.jpg',
-    './3.jpg',
-    './4.png',
+    './11.jpg',
+    './12.jpg',
+    './13.jpg',
+    './14.jpg',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -254,7 +254,7 @@ const LandingPage = () => {
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center">
                   <img
-                    src="https://images.icon-icons.com/2959/PNG/512/pins_placeholders_location_map_markers_geolocation_address_icon_185988.png"
+                    src="https://images.icon-icons.com/656/PNG/512/pin_gps_location_find_map_search_icon-icons.com_59982.png"
                     alt="Location pin icon"
                     className="w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4"
                     loading="lazy"
@@ -266,7 +266,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flex items-center">
                   <img
-                    src="https://images.icon-icons.com/218/PNG/512/Contact_25380.png"
+                    src="https://images.icon-icons.com/614/PNG/512/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png"
                     alt="Phone icon"
                     className="w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4"
                     loading="lazy"
@@ -278,7 +278,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flex items-center">
                   <img
-                    src="https://images.icon-icons.com/156/PNG/128/email_send_22054.png"
+                    src="https://images.icon-icons.com/656/PNG/512/mail_email_message_electronic_online_web_icon-icons.com_59986.png"
                     alt="Email icon"
                     className="w-5 sm:w-6 h-5 sm:h-6 mr-3 sm:mr-4"
                     loading="lazy"
