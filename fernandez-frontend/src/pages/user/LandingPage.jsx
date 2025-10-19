@@ -69,7 +69,7 @@ const LandingPage = () => {
           />
         </div>
         <div className="w-full text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
           Ready to{" "}
             <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
               Ride?
@@ -101,7 +101,7 @@ const LandingPage = () => {
           <img
             src="./car3.png"
             alt="Premium luxury car showcase"
-            className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-contain"
+            className="rounded-2xl shadow-apple w-full h-80 sm:h-96 md:h-[500px] lg:h-[600px] xl:h-[700px] object-contain"
             loading="lazy"
           />
         </div>

@@ -1,3 +1,10 @@
+# TODO: Add Fade Effect to Featured Cars Section Image Transitions
+
+- [ ] Add isFading state to LandingPage.jsx for controlling fade transitions
+- [ ] Modify image elements in Featured Cars Section to include opacity transition and conditional opacity based on isFading
+- [ ] Update nextSlide and prevSlide functions to set isFading true, wait 500ms, update currentIndex, then set isFading false
+- [ ] Test the fade effect by running the app and verifying smooth transitions
+
 # TODO: Contacts Page Implementation
 
 - [ ] Implement Page Header with gradient title "Get in Touch" and subtitle
