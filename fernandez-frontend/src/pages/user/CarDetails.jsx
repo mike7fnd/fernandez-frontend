@@ -62,9 +62,9 @@ export default function CarDetails() {
               {/* Car Image */}
               <div className="space-y-4">
                 <img
-                  src={car.image || "https://images.unsplash.com/photo-1608889172483-70731f5f7e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80"}
+                  src={car.image || "./car3.png"}
                   alt={car.title}
-                  className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
+                  className="w-full h-64 sm:h-80 lg:h-96 object-contain rounded-2xl shadow-lg"
                   loading="lazy"
                 />
               </div>

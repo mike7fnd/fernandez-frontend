@@ -70,9 +70,9 @@ const LandingPage = () => {
         </div>
         <div className="w-full text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-            Wanna Ride?{" "}
+          Ready to{" "}
             <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
-              I Have a Classy Car for you
+              Ride?
             </span>
           </h1>
           <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
@@ -99,9 +99,9 @@ const LandingPage = () => {
         {/* First image */}
         <div className="w-full">
           <img
-            src="https://wallpapercave.com/wp/wc1764107.jpg"
+            src="./car3.png"
             alt="Premium luxury car showcase"
-            className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
+            className="rounded-2xl shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-contain"
             loading="lazy"
           />
         </div>
@@ -117,51 +117,51 @@ const LandingPage = () => {
               Seamless car ordering, tailored to you
             </p>
           </div>
-          <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="w-full grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
             <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
-              <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
+              <div className="p-4 sm:p-6 lg:p-8 space-y-2 sm:space-y-3 lg:space-y-4">
                 <img
                   src="https://images.icon-icons.com/37/PNG/512/purchaseorderapplication_compra_orde_4474.png"
                   alt="Online ordering icon"
-                  className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
+                  className="w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 mx-auto mb-2 sm:mb-3 lg:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
+                <h3 className="text-sm sm:text-lg lg:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Easy Online Ordering
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
+                <p className="hidden sm:block text-sm lg:text-base text-gray-600 leading-relaxed text-center">
                   Configure and order your car in just a few clicks, from anywhere.
                 </p>
               </div>
             </div>
             <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
-              <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
+              <div className="p-4 sm:p-6 lg:p-8 space-y-2 sm:space-y-3 lg:space-y-4">
                 <img
                   src="https://images.icon-icons.com/3553/PNG/512/shipment_shipments_package_delivery_box_ecommerce_icon_224941.png"
                   alt="Fast delivery truck icon"
-                  className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
+                  className="w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 mx-auto mb-2 sm:mb-3 lg:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
+                <h3 className="text-sm sm:text-lg lg:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Fast Shipment
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
+                <p className="hidden sm:block text-sm lg:text-base text-gray-600 leading-relaxed text-center">
                   Get your car delivered to your door in as little as 48 hours.
                 </p>
               </div>
             </div>
             <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
-              <div className="p-6 sm:p-8 space-y-3 sm:space-y-4">
+              <div className="p-4 sm:p-6 lg:p-8 space-y-2 sm:space-y-3 lg:space-y-4">
                 <img
                   src="https://images.icon-icons.com/3583/PNG/512/good_quality_winner_achievement_favorite_award_tick_check_mark_rating_star_icon_225923.png"
                   alt="Quality check icon"
-                  className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300"
+                  className="w-8 sm:w-12 lg:w-16 h-8 sm:h-12 lg:h-16 mx-auto mb-2 sm:mb-3 lg:mb-4 group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <h3 className="text-lg sm:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
+                <h3 className="text-sm sm:text-lg lg:text-xl font-sf-pro font-semibold text-gray-900 group-hover:text-blue-500 transition-colors text-center">
                   Trusted Quality
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">
+                <p className="hidden sm:block text-sm lg:text-base text-gray-600 leading-relaxed text-center">
                   Every car is certified and backed by our satisfaction guarantee.
                 </p>
               </div>
@@ -173,11 +173,11 @@ const LandingPage = () => {
 
       {/* Featured Cars Section */}
       <section className="w-full py-6 sm:py-8 lg:py-10 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-100">
-        <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
+        <div className="w-full px-0 sm:px-4 md:px-6 lg:px-12 xl:px-20 2xl:px-32">
           <h2 className="text-3xl sm:text-4xl font-sf-pro font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent animate-fade-in">
           </h2>
           <div className="overflow-hidden relative">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <img
                 src={images[currentIndex]}
                 alt={`Featured car ${currentIndex + 1}`}
@@ -195,7 +195,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Trusted Brands Section */}
       <section id="brands" className="w-full py-12 sm:py-16 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-400">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <div className="text-center mb-8 sm:mb-12">
@@ -205,7 +204,7 @@ const LandingPage = () => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <div className="flex animate-scroll hover:pause-scroll">
+            <div className="flex animate-scroll">
               {[
                 { src: "https://tse3.mm.bing.net/th/id/OIP.m1ar389tpEOAFN1NTurqvwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Tesla logo" },
                 { src: "https://tse2.mm.bing.net/th/id/OIP.1FR5dWqdKCuYy7mJxUZUcQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "BMW logo" },
@@ -216,12 +215,22 @@ const LandingPage = () => {
                 { src: "https://th.bing.com/th/id/R.27b0b67cdf9ad5e8e7ef21fcf0f265c2?rik=fIePzUEcCGoWcQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fHonda-Logo-High-Definition-Backgrounds.png&ehk=FhtmbjyteXmiuSjraHFpaAhA2mFsT0MhrvboVRI9obI%3d&risl=&pid=ImgRaw&r=0", alt: "Honda" },
                 { src: "https://tse1.mm.bing.net/th/id/OIP.rCier55RtLlFnTH9QIB4nwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Ford logo" },
                 { src: "https://logos-world.net/wp-content/uploads/2021/03/Chevrolet-Emblem.png", alt: "Chevrolet logo" }
-              ].map((logo, index) => (
+              ].concat([
+                { src: "https://tse3.mm.bing.net/th/id/OIP.m1ar389tpEOAFN1NTurqvwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Tesla logo" },
+                { src: "https://tse2.mm.bing.net/th/id/OIP.1FR5dWqdKCuYy7mJxUZUcQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "BMW logo" },
+                { src: "https://tse4.mm.bing.net/th/id/OIP.gA4aVvBIqb8bvH6-u-DbPwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Mercedes-Benz logo" },
+                { src: "https://tse4.mm.bing.net/th/id/OIP.WjUdnMRzelbbnNCNVzA74gHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Audi logo" },
+                { src: "https://th.bing.com/th/id/R.34362162cfe15152af26f2be1aa23814?rik=mNTI8%2fzmRxIbzA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fporsche_logo%2fporsche_logo_PNG1.png&ehk=viyJGrSvoJsH3wwAWviFXn%2bRDqbPUEaUiW4Cndw0V9I%3d&risl=&pid=ImgRaw&r=0", alt: "Porsche logo" },
+                { src: "https://th.bing.com/th/id/R.28af9f9e7d9a24312579eeb763670105?rik=LdtMaMFfR0XyfA&riu=http%3a%2f%2fwww.car-brand-names.com%2fwp-content%2fuploads%2f2015%2f07%2fToyota-emblem-3.jpg&ehk=XzpjNK%2bJcTTvYi0km9tQ3CBt%2bzZ2Sua1b%2bi%2bKFza%2bJ0%3d&risl=&pid=ImgRaw&r=0", alt: "Toyota Logo" },
+                { src: "https://th.bing.com/th/id/R.27b0b67cdf9ad5e8e7ef21fcf0f265c2?rik=fIePzUEcCGoWcQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fHonda-Logo-High-Definition-Backgrounds.png&ehk=FhtmbjyteXmiuSjraHFpaAhA2mFsT0MhrvboVRI9obI%3d&risl=&pid=ImgRaw&r=0", alt: "Honda" },
+                { src: "https://tse1.mm.bing.net/th/id/OIP.rCier55RtLlFnTH9QIB4nwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Ford logo" },
+                { src: "https://logos-world.net/wp-content/uploads/2021/03/Chevrolet-Emblem.png", alt: "Chevrolet logo" }
+              ]).map((logo, index) => (
                 <img
                   key={index}
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-12 sm:w-16 md:w-20 h-12 sm:h-16 md:h-20 mx-4 sm:mx-6 object-contain"
+                  className="w-12 sm:w-16 md:w-20 h-12 sm:h-16 md:h-20 mx-4 sm:mx-6 object-contain flex-shrink-0"
                   loading="lazy"
                 />
               ))}
