@@ -138,10 +138,7 @@ const LandingPage = () => {
       <section id="features" className="w-full py-16 sm:py-20 md:py-24 bg-system-gradient relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-200">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-sf-pro font-bold text-gray-900 mb-2 sm:mb-4">Why Order with Us</h2>
-            <p className="text-sm sm:text-base text-gray-600">
-              Seamless car ordering, tailored to you
-            </p>
+            <h2 className="text-5xl sm:text-6xl font-sf-pro font-bold text-gray-900 mb-2 sm:mb-4">Why Order with Us?</h2>
           </div>
           <div className="w-full grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
             <div className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-200 ease-out cursor-pointer group">
@@ -272,7 +269,8 @@ const LandingPage = () => {
           src="./video.mp4"
           loop
           muted
-          className="w-full h-full object-cover"
+          playsInline
+          className="w-full h-full object-cover aspect-[6/19] md:aspect-video"
           title="Car Showcase Video"
         ></video>
       </section>
