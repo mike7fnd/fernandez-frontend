@@ -83,54 +83,68 @@ const LandingPage = () => {
   return (
     <div className="bg-system-gradient min-h-screen w-full relative">
       <Navbar />
+<section className="w-full flex flex-col px-4 md:px-6 py-4 md:py-6 gap-2 md:gap-x-4 gap-y-4 md:gap-y-6 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
+  <div className="w-full p-4 md:p-6">
+    <img
+      src="./car2.png"
+      alt="Premium luxury car showcase"
+      className="rounded-none shadow-apple w-full h-48 sm:h-64 md:h-80 lg:h-screen object-contain"
+      loading="lazy"
+    />
+  </div>
+  <div className="w-full text-center">
+    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+      Ready to{" "}
+      <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
+        Ride?
+      </span>
+    </h1>
+    <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
+      Choose from our premium selection of luxury cars, SUVs, and sports models. Order now and drive your dream car tomorrow.
+    </p>
+    <div className="flex flex-row gap-2 sm:gap-6 justify-center">
+      <button
+        onClick={() => navigate('/cars')}
+        className="bg-[#1A2E44] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
+      >
+        Start Your Order →
+      </button>
+      <button
+        onClick={() => navigate('/cars')}
+        className="bg-[#4B5563] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#4B5563] active:scale-95"
+      >
+        Browse Cars
+      </button>
+    </div>
+  </div>
+</section>
 
- <section className="w-full flex flex-col px-8 md:px-12 py-8 md:py-12 gap-4 md:gap-x-8 gap-y-8 md:gap-y-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
-        <div className="w-full p-8 md:p-12">
-          <img
-            src="./car2.png"
-            alt="Premium luxury car showcase"
-            className="rounded-none shadow-apple w-full h-48 sm:h-64 md:h-96 lg:h-[500px] object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div className="w-full text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-            Ready to{" "}
-            <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
-              Ride?
-            </span>
-          </h1>
-          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
-            Choose from our premium selection of luxury cars, SUVs, and sports models. Order now and drive your dream car tomorrow.
-          </p>
-          <div className="flex flex-row gap-2 sm:gap-6 justify-center">
-            <button
-              onClick={() => navigate('/cars')}
-              className="bg-[#1A2E44] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
-            >
-              Start Your Order →
-            </button>
-            <button
-              onClick={() => navigate('/cars')}
-              className="bg-[#4B5563] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#4B5563] active:scale-95"
-            >
-              Browse Cars
-            </button>
-          </div>
-        </div>
-      </section>
 
-      <section className="w-full flex flex-col px-4 md:px-6 py-4 md:py-6 gap-2 md:gap-x-4 gap-y-2 md:gap-y-3 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
-        {/* First image */}
-        <div className="w-full">
-          <img
-            src="./car3.png"
-            alt="Premium luxury car showcase"
-            className="rounded-none shadow-apple w-full h-80 sm:h-96 md:h-[500px] lg:h-[600px] xl:h-[700px] object-contain"
-            loading="lazy"
-          />
-        </div>
-      </section>
+
+<section className="w-full flex flex-col px-0 py-1 md:py-2 gap-1 md:gap-x-2 gap-y-1 md:gap-y-2 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
+  {/* First image */}
+  <div className="w-full">
+    <img
+      src="./feature1.png"
+      alt="Premium luxury car showcase"
+      className="rounded-none shadow-apple w-full h-64 sm:h-80 md:h-96 lg:h-screen object-contain"
+      loading="lazy"
+    />
+  </div>
+</section>
+
+<section className="w-full flex flex-col px-0 py-1 md:py-2 gap-1 md:gap-x-2 gap-y-1 md:gap-y-2 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
+  {/* First image */}
+  <div className="w-full">
+    <img
+      src="./feature3.png"
+      alt="Premium luxury car showcase"
+      className="rounded-none shadow-apple w-full h-64 sm:h-80 md:h-96 lg:h-screen object-contain"
+      loading="lazy"
+    />
+  </div>
+</section>
+
 
 
       {/* Features Section */}

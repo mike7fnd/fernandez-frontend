@@ -13,11 +13,11 @@ export default function Navbar() {
     <nav className="glass bg-white/10 bg-glass-gradient border-b border-white/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12 sm:h-16">
-          <Link to="/" className="flex items-center p-1">
+          <Link to="/" className="flex items-center p-2">
             <img
-              src={logo}
+              src="https://images.icon-icons.com/2009/PNG/512/steering_wheel_icon_123463.png"
               alt="FCars Logo"
-              className="h-20 sm:h-28 w-auto object-contain"
+              className="h-6 sm:h-6 w-6 object-contain"
               loading="lazy"
             />
           </Link>
