@@ -6,7 +6,7 @@ import carsIcon from '../../image/cars.png'; // Replace with your cars icon
 import ordersIcon from '../../image/orders.png'; // Replace with your orders icon
 import contactsIcon from '../../image/contacts.png'; // Replace with your contacts icon
 
-export default function Navbar({ onToggleSidebar }) {
+export default function Navbar() {
   const location = useLocation();
 
   return (
@@ -50,26 +50,6 @@ export default function Navbar({ onToggleSidebar }) {
                 Contact
               </Link>
             </div>
-            {/* Sidebar Toggle Button */}
-            <button
-              onClick={onToggleSidebar}
-              className="p-2 rounded-apple hover:bg-apple-gray-50 transition-colors"
-            >
-              <svg
-                className="w-6 h-6 text-apple-gray-700"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </nav>
