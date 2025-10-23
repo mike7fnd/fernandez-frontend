@@ -1,6 +1,7 @@
-﻿import React, { useEffect, useState, useRef } from "react";
+﻿﻿import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/ui/navbar";
+import logo from "../../image/logo.png";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -82,69 +83,64 @@ const LandingPage = () => {
 
   return (
     <div className="bg-system-gradient min-h-screen w-full relative">
+      {/* Mobile Logo */}
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md border-b border-white/20 z-40 px-4 py-2">
+        <img
+          src={logo}
+          alt="FCars Logo"
+          className="h-10 w-auto object-contain mx-auto"
+          loading="lazy"
+        />
+      </div>
       <Navbar />
-<section className="w-full flex flex-col px-4 md:px-6 py-4 md:py-6 gap-2 md:gap-x-4 gap-y-4 md:gap-y-6 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
-  <div className="w-full p-4 md:p-6">
-    <img
-      src="./car2.png"
-      alt="Premium luxury car showcase"
-      className="rounded-none shadow-apple w-full h-48 sm:h-64 md:h-80 lg:h-screen object-contain"
-      loading="lazy"
-    />
-  </div>
-  <div className="w-full text-center">
-    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-      Ready to{" "}
-      <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
-        Ride?
-      </span>
-    </h1>
-    <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
-      Choose from our premium selection of luxury cars, SUVs, and sports models. Order now and drive your dream car tomorrow.
-    </p>
-    <div className="flex flex-row gap-2 sm:gap-6 justify-center">
-      <button
-        onClick={() => navigate('/cars')}
-        className="bg-[#1A2E44] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
-      >
-        Start Your Order →
-      </button>
-      <button
-        onClick={() => navigate('/cars')}
-        className="bg-[#4B5563] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#4B5563] active:scale-95"
-      >
-        Browse Cars
-      </button>
-    </div>
-  </div>
-</section>
 
+      <section className="w-full flex flex-col px-8 md:px-12 pt-20 md:pt-12 py-8 md:py-12 gap-4 md:gap-x-8 gap-y-8 md:gap-y-12 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
+        <div className="w-full p-9 md:p-15">
+          <img
+            src="./car2.png"
+            alt="Premium luxury car showcase"
+            className="rounded-none shadow-apple w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="w-full text-center">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sf-pro font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+            Ready to{" "}
+            <span className="bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
+              Ride?
+            </span>
+          </h1>
+          <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
+            Choose from our premium selection of luxury cars, SUVs, and sports models. Order now and drive your dream car tomorrow.
+          </p>
+          <div className="flex flex-row gap-2 sm:gap-6 justify-center">
+            <button
+              onClick={() => navigate('/cars')}
+              className="bg-[#1A2E44] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#1A2E44] active:scale-95"
+            >
+              Start Your Order →
+            </button>
+            <button
+              onClick={() => navigate('/cars')}
+              className="bg-[#4B5563] text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-lg hover:ring-4 ring-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all duration-300 ease-out font-sf-pro font-semibold text-xs sm:text-base active:bg-white active:text-[#4B5563] active:scale-95"
+            >
+              Browse Cars
+            </button>
+          </div>
+        </div>
+      </section>
 
-
-<section className="w-full flex flex-col px-0 py-1 md:py-2 gap-1 md:gap-x-2 gap-y-1 md:gap-y-2 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
-  {/* First image */}
-  <div className="w-full">
-    <img
-      src="./feature1.png"
-      alt="Premium luxury car showcase"
-      className="rounded-none shadow-apple w-full h-64 sm:h-80 md:h-96 lg:h-screen object-contain"
-      loading="lazy"
-    />
-  </div>
-</section>
-
-<section className="w-full flex flex-col px-0 py-1 md:py-2 gap-1 md:gap-x-2 gap-y-1 md:gap-y-2 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
-  {/* First image */}
-  <div className="w-full">
-    <img
-      src="./feature3.png"
-      alt="Premium luxury car showcase"
-      className="rounded-none shadow-apple w-full h-64 sm:h-80 md:h-96 lg:h-screen object-contain"
-      loading="lazy"
-    />
-  </div>
-</section>
-
+      <section className="w-full flex flex-col px-4 md:px-6 py-4 md:py-6 gap-2 md:gap-x-4 gap-y-2 md:gap-y-3 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
+        {/* First image */}
+        <div className="w-full">
+          <img
+            src="./car3.png"
+            alt="Premium luxury car showcase"
+            className="rounded-none shadow-apple w-full h-80 sm:h-96 md:h-[500px] lg:h-[600px] xl:h-[700px] object-contain"
+            loading="lazy"
+          />
+        </div>
+      </section>
 
 
       {/* Features Section */}
@@ -205,7 +201,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-<section className="w-full py-6 sm:py-5 lg:py-8 bg-system-gradient relative z-10">
+      <section className="w-full py-6 sm:py-5 lg:py-8 bg-system-gradient relative z-10">
         <div className="w-full px-4 sm:px-4 md:px-6 lg:px-6 xl:px-8">
           <h2 className="text-3xl sm:text-4xl font-sf-pro font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-[#536976] to-[#292e49] bg-clip-text text-transparent">
           </h2>
@@ -228,49 +224,49 @@ const LandingPage = () => {
         </div>
       </section>
 
- <section id="brands" className="w-full py-16 sm:py-20 lg:py-24 bg-system-gradient relative z-10">
-  <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
-    <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">Trusted Brands</h2>
-      <p className="text-base sm:text-lg md:text-xl text-gray-600">
-        Order from the world's leading car manufacturers
-      </p>
-    </div>
-    <div className="grid grid-cols-5 gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8 justify-items-center mb-8 sm:mb-12 lg:mb-16">
-      {[
-        { src: "https://tse3.mm.bing.net/th/id/OIP.m1ar389tpEOAFN1NTurqvwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Tesla logo" },
-        { src: "https://tse2.mm.bing.net/th/id/OIP.1FR5dWqdKCuYy7mJxUZUcQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "BMW logo" },
-        { src: "https://tse4.mm.bing.net/th/id/OIP.gA4aVvBIqb8bvH6-u-DbPwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Mercedes-Benz logo" },
-        { src: "https://tse4.mm.bing.net/th/id/OIP.WjUdnMRzelbbnNCNVzA74gHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Audi logo" },
-        { src: "https://th.bing.com/th/id/R.34362162cfe15152af26f2be1aa23814?rik=mNTI8%2fzmRxIbzA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fporsche_logo%2fporsche_logo_PNG1.png&ehk=viyJGrSvoJsH3wwAWviFXn%2bRDqbPUEaUiW4Cndw0V9I%3d&risl=&pid=ImgRaw&r=0", alt: "Porsche logo" }
-      ].map((logo, index) => (
-        <img
-          key={index}
-          src={logo.src}
-          alt={logo.alt}
-          className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 object-contain"
-          loading="lazy"
-        />
-      ))}
-    </div>
-    <div className="flex flex-wrap justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8">
-      {[
-        { src: "https://th.bing.com/th/id/R.28af9f9e7d9a24312579eeb763670105?rik=LdtMaMFfR0XyfA&riu=http%3a%2f%2fwww.car-brand-names.com%2fwp-content%2fuploads%2f2015%2f07%2fToyota-emblem-3.jpg&ehk=XzpjNK%2bJcTTvYi0km9tQ3CBt%2bzZ2Sua1b%2bi%2bKFza%2bJ0%3d&risl=&pid=ImgRaw&r=0", alt: "Toyota Logo" },
-        { src: "https://th.bing.com/th/id/R.27b0b67cdf9ad5e8e7ef21fcf0f265c2?rik=fIePzUEcCGoWcQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fHonda-Logo-High-Definition-Backgrounds.png&ehk=FhtmbjyteXmiuSjraHFpaAhA2mFsT0MhrvboVRI9obI%3d&risl=&pid=ImgRaw&r=0", alt: "Honda" },
-        { src: "https://tse1.mm.bing.net/th/id/OIP.rCier55RtLlFnTH9QIB4nwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Ford logo" },
-        { src: "https://logos-world.net/wp-content/uploads/2021/03/Chevrolet-Emblem.png", alt: "Chevrolet logo" }
-      ].map((logo, index) => (
-        <img
-          key={index}
-          src={logo.src}
-          alt={logo.alt}
-          className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 object-contain"
-          loading="lazy"
-        />
-      ))}
-    </div>
-  </div>
-</section>
+      <section id="brands" className="w-full py-16 sm:py-20 lg:py-24 bg-system-gradient relative z-10">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
+          <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sf-pro font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">Trusted Brands</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
+              Order from the world's leading car manufacturers
+            </p>
+          </div>
+          <div className="grid grid-cols-5 gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8 justify-items-center mb-8 sm:mb-12 lg:mb-16">
+            {[
+              { src: "https://tse3.mm.bing.net/th/id/OIP.m1ar389tpEOAFN1NTurqvwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Tesla logo" },
+              { src: "https://tse2.mm.bing.net/th/id/OIP.1FR5dWqdKCuYy7mJxUZUcQHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "BMW logo" },
+              { src: "https://tse4.mm.bing.net/th/id/OIP.gA4aVvBIqb8bvH6-u-DbPwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Mercedes-Benz logo" },
+              { src: "https://tse4.mm.bing.net/th/id/OIP.WjUdnMRzelbbnNCNVzA74gHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Audi logo" },
+              { src: "https://th.bing.com/th/id/R.34362162cfe15152af26f2be1aa23814?rik=mNTI8%2fzmRxIbzA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fporsche_logo%2fporsche_logo_PNG1.png&ehk=viyJGrSvoJsH3wwAWviFXn%2bRDqbPUEaUiW4Cndw0V9I%3d&risl=&pid=ImgRaw&r=0", alt: "Porsche logo" }
+            ].map((logo, index) => (
+              <img
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 object-contain"
+                loading="lazy"
+              />
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-2 xs:gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+            {[
+              { src: "https://th.bing.com/th/id/R.28af9f9e7d9a24312579eeb763670105?rik=LdtMaMFfR0XyfA&riu=http%3a%2f%2fwww.car-brand-names.com%2fwp-content%2fuploads%2f2015%2f07%2fToyota-emblem-3.jpg&ehk=XzpjNK%2bJcTTvYi0km9tQ3CBt%2bzZ2Sua1b%2bi%2bKFza%2bJ0%3d&risl=&pid=ImgRaw&r=0", alt: "Toyota Logo" },
+              { src: "https://th.bing.com/th/id/R.27b0b67cdf9ad5e8e7ef21fcf0f265c2?rik=fIePzUEcCGoWcQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fHonda-Logo-High-Definition-Backgrounds.png&ehk=FhtmbjyteXmiuSjraHFpaAhA2mFsT0MhrvboVRI9obI%3d&risl=&pid=ImgRaw&r=0", alt: "Honda" },
+              { src: "https://tse1.mm.bing.net/th/id/OIP.rCier55RtLlFnTH9QIB4nwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Ford logo" },
+              { src: "https://logos-world.net/wp-content/uploads/2021/03/Chevrolet-Emblem.png", alt: "Chevrolet logo" }
+            ].map((logo, index) => (
+              <img
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                className="w-12 xs:w-14 sm:w-16 md:w-20 lg:w-24 xl:w-28 h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 object-contain"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Video Section */}
       <section className="w-full h-screen bg-black relative z-10 animate-on-scroll opacity-0 transition-all duration-1000 delay-600">
