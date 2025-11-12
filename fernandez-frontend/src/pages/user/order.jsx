@@ -58,7 +58,7 @@ export default function Order() {
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
   const deliveryFee = 50;
   const insuranceCost = insurance === 'basic' ? 10 * cart.reduce((total, item) => total + item.quantity, 0) :
-                       insurance === 'premium' ? 20 * cart.reduce((total, item) => total + item.quantity, 0) : 0;
+    insurance === 'premium' ? 20 * cart.reduce((total, item) => total + item.quantity, 0) : 0;
   const addonsCost = addons.reduce((total, addon) => {
     const cost = addon === 'gps' ? 5 : addon === 'carseat' ? 8 : addon === 'cleaning' ? 15 : 0;
     return total + cost * cart.reduce((total, item) => total + item.quantity, 0);
@@ -140,7 +140,6 @@ export default function Order() {
 
   return (
     <>
-      <Navbar />
       <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8 max-w-7xl">
         {/* Progress Indicator */}
         <div className="flex justify-center mb-6 sm:mb-8">
@@ -150,18 +149,16 @@ export default function Order() {
                 <div className="flex items-center">
                   <button
                     onClick={() => handleStepClick(step.id)}
-                    className={`w-6 sm:w-8 h-6 sm:h-8 rounded-full flex items-center justify-center font-sf-pro font-semibold text-sm sm:text-base transition-colors ${
-                      currentStep === step.id
+                    className={`w-6 sm:w-8 h-6 sm:h-8 rounded-full flex items-center justify-center font-sf-pro font-semibold text-sm sm:text-base transition-colors ${currentStep === step.id
                         ? 'bg-[#1A2E44] text-white'
                         : 'bg-gray-300 text-gray-600 hover:bg-gray-400'
-                    }`}
+                      }`}
                   >
                     {step.id}
                   </button>
                   <span
-                    className={`ml-1 sm:ml-2 text-xs sm:text-sm font-sf-pro font-medium ${
-                      currentStep === step.id ? 'text-[#1A2E44]' : 'text-gray-600'
-                    }`}
+                    className={`ml-1 sm:ml-2 text-xs sm:text-sm font-sf-pro font-medium ${currentStep === step.id ? 'text-[#1A2E44]' : 'text-gray-600'
+                      }`}
                   >
                     {step.label}
                   </span>
@@ -358,7 +355,7 @@ export default function Order() {
                     <input
                       type="text"
                       value={userInfo.name}
-                      onChange={(e) => setUserInfo({...userInfo, name: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, name: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                       placeholder="Your Name"
                     />
@@ -368,7 +365,7 @@ export default function Order() {
                     <input
                       type="email"
                       value={userInfo.email}
-                      onChange={(e) => setUserInfo({...userInfo, email: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, email: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                       placeholder="your@email.com"
                     />
@@ -378,7 +375,7 @@ export default function Order() {
                     <input
                       type="tel"
                       value={userInfo.phone}
-                      onChange={(e) => setUserInfo({...userInfo, phone: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, phone: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                       placeholder="+1 (555) 123-4567"
                     />
@@ -388,7 +385,7 @@ export default function Order() {
                     <input
                       type="text"
                       value={userInfo.address}
-                      onChange={(e) => setUserInfo({...userInfo, address: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, address: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                       placeholder="123 Car Street, Auto City, AC 12345"
                     />
@@ -398,7 +395,7 @@ export default function Order() {
                     <input
                       type="date"
                       value={userInfo.deliveryDate}
-                      onChange={(e) => setUserInfo({...userInfo, deliveryDate: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, deliveryDate: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                     />
                   </div>
@@ -406,7 +403,7 @@ export default function Order() {
                     <label className="block text-xs sm:text-sm font-sf-pro font-medium text-gray-700 mb-1 sm:mb-2">Delivery Time</label>
                     <select
                       value={userInfo.deliveryTime}
-                      onChange={(e) => setUserInfo({...userInfo, deliveryTime: e.target.value})}
+                      onChange={(e) => setUserInfo({ ...userInfo, deliveryTime: e.target.value })}
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 font-sf-pro text-gray-900 text-sm sm:text-base"
                     >
                       <option value="">Select Time</option>

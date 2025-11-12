@@ -370,7 +370,6 @@ export default function Listing() {
 
   return (
     <>
-      <Navbar />
       {/* Notification */}
       {notification && (
         <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg z-50 font-sf-pro font-medium animate-bounce text-sm sm:text-base">

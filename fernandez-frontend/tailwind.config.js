@@ -66,12 +66,53 @@ export default {
       },
       animation: {
         'shimmer': 'shimmer 2s infinite linear',
+        'pulse-launch': 'pulse-launch 0.5s ease-in-out',
+        'bounce-spring': 'bounce-spring 0.15s ease-out',
+        'parallax-lift': 'parallax-lift 0.3s ease-in-out',
+        'expand-drawer': 'expand-drawer 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
       },
       keyframes: {
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        'pulse-launch': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.02)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        'bounce-spring': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        'parallax-lift': {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-10px)' },
+        },
+        'expand-drawer': {
+          '0%': { transform: 'translateY(100%)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+      },
+      boxShadow: {
+        'apple': '0 1px 3px rgba(0,0,0,0.12)',
+        'apple-lg': '0 4px 12px rgba(0,0,0,0.15)',
+        'apple-hover': '0 10px 25px rgba(0,0,0,0.15)',
+        'floating-nav': '0px 4px 12px rgba(0,0,0,0.08)',
+      },
+      spacing: {
+        // 8pt grid system
+        '8': '0.5rem', // 8px
+        '16': '1rem', // 16px
+        '24': '1.5rem', // 24px
+        '32': '2rem', // 32px
+        '40': '2.5rem', // 40px
+        '48': '3rem', // 48px
+        '56': '3.5rem', // 56px
+        '64': '4rem', // 64px
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+        'safe-top': 'env(safe-area-inset-top)',
       },
     },
   },

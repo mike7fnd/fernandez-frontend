@@ -60,7 +60,7 @@ const Contacts = () => {
 
   return (
     <div className="bg-system-gradient min-h-screen w-full relative">
-      <Navbar />
+ 
 
       {/* Page Header */}
       <section className="w-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-12 sm:py-16 md:py-20 lg:py-24 gap-6 sm:gap-8 relative z-10 animate-on-scroll opacity-0 transition-all duration-1000">
